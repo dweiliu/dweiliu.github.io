@@ -413,7 +413,8 @@ $(document).ready(function() {
     registerServiceWorker();
 
     function registerServiceWorker() {
-      return navigator.serviceWorker.register('javascript/pushwoosh-service-worker.js')
+      return navigator.serviceWorker.register('pushwoosh-service-worker.js')
+      // return navigator.serviceWorker.register('javascript/pushwoosh-service-worker.js')
       .then(function(registration) {
         console.log('Service worker successfully registered.');
         return registration;
