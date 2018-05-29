@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'TechTarget-Icon';
+	src:url('../../fonts/TechTarget-Icon.eot');
+	src:url('../../fonts/TechTarget-Icon.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/TechTarget-Icon.woff') format('woff'),
+		url('../../fonts/TechTarget-Icon.ttf') format('truetype'),
+		url('../../fonts/TechTarget-Icon.svg#TechTarget-Icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'TechTarget-Icon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="your-class-prefix"] {
+*/
+.white_pages, .video, .webcast, .twitter, .tech_target_eye, .tag, .share, .search, .reply, .print, .podcast, .pictures, .partners, .next_steps, .menu, .mail, .arrow_forward, .arrow_up, .article, .linkedin, .book, .chapter, .comments, .discussion1, .ebook, .enlarge, .external_link, .facebook, .flag, .google_plus, .guide, .like, .info_definition, .arrow_down, .arrow_backward, .double_arrow, .navigation_detail, .navigation_arrow, .download, .collapse, .expand, .close {
+	font-family: 'TechTarget-Icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.white_pages:before {
+	content: "\38";
+}
+.video:before {
+	content: "\62";
+}
+.webcast:before {
+	content: "\61";
+}
+.twitter:before {
+	content: "\63";
+}
+.tech_target_eye:before {
+	content: "\64";
+}
+.tag:before {
+	content: "\65";
+}
+.share:before {
+	content: "\66";
+}
+.search:before {
+	content: "\67";
+}
+.reply:before {
+	content: "\68";
+}
+.print:before {
+	content: "\69";
+}
+.podcast:before {
+	content: "\6a";
+}
+.pictures:before {
+	content: "\6b";
+}
+.partners:before {
+	content: "\6c";
+}
+.next_steps:before {
+	content: "\6d";
+}
+.menu:before {
+	content: "\39";
+}
+.mail:before {
+	content: "\6e";
+}
+.arrow_forward:before {
+	content: "\34";
+}
+.arrow_up:before {
+	content: "\33";
+}
+.article:before {
+	content: "\32";
+}
+.linkedin:before {
+	content: "\6f";
+}
+.book:before {
+	content: "\37";
+}
+.chapter:before {
+	content: "\31";
+}
+.comments:before {
+	content: "\7a";
+}
+.discussion1:before {
+	content: "\79";
+}
+.ebook:before {
+	content: "\78";
+}
+.enlarge:before {
+	content: "\77";
+}
+.external_link:before {
+	content: "\76";
+}
+.facebook:before {
+	content: "\75";
+}
+.flag:before {
+	content: "\74";
+}
+.google_plus:before {
+	content: "\73";
+}
+.guide:before {
+	content: "\72";
+}
+.like:before {
+	content: "\70";
+}
+.info_definition:before {
+	content: "\71";
+}
+.arrow_down:before {
+	content: "\35";
+}
+.arrow_backward:before {
+	content: "\36";
+}
+.double_arrow:before {
+	content: "\30";
+}
+.navigation_detail:before {
+	content: "\41";
+}
+.navigation_arrow:before {
+	content: "\42";
+}
+.download:before {
+	content: "\43";
+}
+.collapse:before {
+	content: "\44";
+}
+.expand:before {
+	content: "\45";
+}
+.close:before {
+	content: "\46";
+}

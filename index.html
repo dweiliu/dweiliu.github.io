@@ -1,46 +1,770 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Push Codelab</title>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-
-<body>
-
-<!--   <header>
-    <h1>Push Codelab</h1>
-  </header>
- -->
-  <main>
-    <p>Welcome to the push messaging codelab. The button below needs to be
-    fixed to support subscribing to push.</p>
-    <p>
-      <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-        Enable Push Messaging
-      </button>
-    </p>
-    <section class="subscription-details js-subscription-details is-invisible">
-      <p>Once you've subscribed your user, you'd send their subscription to your
-      server to store in a database so that when you want to send a message
-      you can lookup the subscription and send a message to it.</p>
-      <p>To simplify things for this code lab copy the following details
-      into the <a href="https://web-push-codelab.glitch.me//">Push Companion
-      Site</a> and it'll send a push message for you, using the application
-      server keys on the site - so make sure they match.</p>
-      <pre><code class="js-subscription-json"></code></pre>
-    </section>
-  </main>
-
-  <script src="scripts/main.js"></script>
-
-  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-</body>
+<!--if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7(dir='ltr', lang='en')
+-->
+<!--if IE 7html.no-js.lt-ie9.lt-ie8(dir='ltr', lang='en')
+-->
+<!--if IE 8html.no-js.lt-ie9(dir='ltr', lang='en')
+-->
+<!-- [if gt IE 8] <!-->
+<html dir="ltr" lang="en" class="no-js gt-ie8">
+  <!-- <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Accelerate your ambitions with Dimension Data Cloud</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Learn how Dimension Data helps enterprises move IT securely to the private cloud and how it can protect your company from threats.">
+    <meta name="robots" content="noodp">
+    <link rel="canonical" href="http://searchcloudcomputing.techtarget.com/cloudsurround/">
+    <meta name="google-site-verification" content="rZaq1jkHspRZlqJRwuEdqAuVm5wiEXePze_foZRIYqc">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://fast.fonts.net/jsapi/124d48dd-e515-4302-8bfb-1d5c1e3da916.js"></script>
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/normalize.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/icomoon.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.slide.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/v8-legacy.css">
+    <link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main.css?v=6.49">
+    <link rel="manifest" href="javascript/manifest.json">
+    <!--if IE 9
+    link(rel='stylesheet', href='http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_2.css?v=6.49')
+    link(rel='stylesheet', href='http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_3.css?v=6.49')
+    -->
+    <script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive.min.js?v=6.49"></script>
+    <script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/writeCapture.js"></script>
+    <script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery.writeCapture.js"></script>
+    <script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+    <script src="javascript/video.js"></script>
+    <script>(function() { var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'); s.type='text/javascript'; s.async=true; s.src='http://s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js'; h.appendChild(s); })();</script>
+    <script type="text/javascript">var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; (function() { var gads = document.createElement('script'); gads.async = true; gads.type = 'text/javascript'; var useSSL = 'https:' == document.location.protocol; gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(gads, node); })();</script>
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.defineSlot('/3618/mcrst', [1, 1], 'div-gpt-ad-1452889091374-0').addService(googletag.pubads()).setTargeting("mcrst", "cloudsurround1x1io1297001li1289580"); googletag.defineSlot('/3618/mcrst', [300, 250], 'div-gpt-ad-1452889091374-1').addService(googletag.pubads()).setTargeting("mcrst", "cloudsurround300x250io129700li1289580"); googletag.defineSlot('/3618/mcrst', [300, 250], 'div-gpt-ad-1452889091374-2').addService(googletag.pubads()).setTargeting("mcrst", "cloudsurround300x250cybersecurityio129700li1289580"); googletag.defineSlot('/3618/mcrst', [300, 250], 'div-gpt-ad-1452889091374-3').addService(googletag.pubads()).setTargeting("mcrst", "cloudsurrounddigitalinfra300x250io129700li1289580"); googletag.pubads().enableVideoAds(); googletag.enableServices(); });</script>
+    <div id="div-gpt-ad-1452889091374-0" style="width:1px; height:1px;">
+      <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1452889091374-0'); });</script>
+    </div>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <script src="javascript/handlebars.js"></script>
+    <script src="javascript/script-responsive.js"></script>
+    <script src="javascript/jquery.menu-aim.js"></script>
+    <script>TT("page", {"regHost":"http://users.techtarget.com","adScheme":"15","gaSiteAcct":"UA-19047342-10","lang":"en","ga":true,"timestamp":"2016-06-08 08:38:53","adId":"4500255912","siteName":"cloudsurround","siteType":"microsite/unisite","uaid":"UA-19047342-10","gaPageTrackUrl":"/page/etpk_0/ptpk_0/false/MICROSITE_LP/channel/cid_4500255912/date_null/mem_0/rtpk_0/idx_0","parentSite":"searchCloudComputing","pageIndex":0,"siteId":201,"atHost":"http://go.techtarget.com","isChannel":true,"appCode":"0","zone":"MICROSITE_LP"});</script>
+    <!-- Begin Chartbeat-->
+    <script>var _sf_startpt=(new Date()).getTime();</script>
+    <!-- End Chartbeat-->
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144×144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114×114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72×72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144×144" href="/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114×114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72×72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  </head>
+  <body id="microsite" class="searchcloudcomputing_embedded">
+    <!-- Begin Google Tag Manager-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PWWZSH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWWZSH');</script>
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CSF7N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5CSF7N');</script>
+    <!-- End Google Tag Manager-->
+    <div id="site-container" class="site-container">
+      <div>
+        <div>
+          <!-- PinnedNavBarController, generated at 08:38:53 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+          <!-- AdsController, generated at 08:38:53 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+          <div class="ad-wrapper header-leaderboard ad-mobile">
+            <!-- AdsController, generated at 08:38:53 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+          </div>
+          <header id="page-header" class="header header_v2 en">
+            <button class="nav-toggle"><i data-icon="9" class="icon"></i></button><a href="http://www.techtarget.com/network" class="header-logo mobile-link"><span class="header-logo-mobile">SearchDataBackup</span></a><a href="http://searchdatabackup.techtarget.com" class="header-logo desktop-link"><img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-desktop replace_2x"><img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-small replace_2x"></a>
+            <button class="header-search-toggle"><i data-icon="g" class="icon"></i></button>
+            <form action="http://www.techtarget.com/search/query" method="get" class="header-search">
+              <label for="header-search-input" class="visuallyhidden">Search the TechTarget Network</label>
+              <input id="header-search-input" autocomplete="off" type="text" name="q" placeholder="Search the TechTarget Network" class="header-search-input ui-autocomplete-input">
+              <button class="header-search-submit"><i data-icon="g" class="icon"></i></button>
+            </form>
+            <nav class="nav"><a href="http://users.techtarget.com/registration/searchDataBackup/LoginRegister.page" class="nav-join-pro"><span>Sign-up now. Start my free, unlimited access.</span></a>
+              <div class="nav-user"><a href="http://users.techtarget.com/registration/searchDataBackup/LoginRegister.page"><span class="nav-user-action">Login</span></a><a href="http://users.techtarget.com/registration/embdruvabackup/Register.page" class="register"><span class="nav-user-action">Register</span></a></div>
+              <script>
+                TT(["context","lib/jquery"],function(c,$){var u=c.getUser();if(u.loggedIn){$('div.nav-user').children("a:first")
+                .before('<i class="icon header_logged_in_icon" title="'+u.displayName+'"></i>')
+                .attr("href", "http://users.techtarget.com/registration/searchDataBackup/Logout.page?fromURL=" + window.location.href).children("span.nav-user-action:first").text('Logout');
+                $('.register').removeAttr('href');$('a.register').hide();}else{$('div.nav-user').children("a:first").attr("href", "http://users.techtarget.com/registration/searchDataBackup/LoginRegister.page?fromURL="+window.location.href);
+                $('a.nav-join-pro').attr("href", "http://users.techtarget.com/registration/searchDataBackup/LoginRegister.page?fromURL="+window.location.href);}});
+              </script>
+              <div class="nav-links">
+                <ul>
+                  <li id="nav-links-TechtargetNetwork"><a href="http://www.techtarget.com/network">Techtarget Network</a></li>
+                  <li id="nav-links-News"><a href="http://searchdatabackup.techtarget.com/cloud-backup-and-recovery/info/news">News</a></li>
+                  <li id="nav-links-Features"><a href="http://searchdatabackup.techtarget.com/cloud-backup-and-recovery/features">Features</a></li>
+                  <li id="nav-links-Tips"><a href="http://searchdatabackup.techtarget.com/tips">Tips</a></li>
+                  <li class="more-content"><a href="#">More Content<i data-icon="5" class="icon icon-arrow-down"></i></a>
+                    <div class="more-content-dropdown">
+                      <ul class="nav-list-sublist">
+                        <li id="nav-links-Answers"><a href="http://searchdatabackup.techtarget.com/answers">Answers</a></li>
+                        <li id="nav-links-Buyer'sGuides"><a href="http://whatis.techtarget.com/resources/Buyers-Guides">Buyer's Guides</a></li>
+                        <li id="nav-links-EssentialGuides"><a href="http://searchdatabackup.techtarget.com/guides">Essential Guides</a></li>
+                        <li id="nav-links-Opinions"><a href="http://searchdatabackup.techtarget.com/cloud-backup-and-recovery/opinions">Opinions</a></li>
+                        <li id="nav-links-PhotoStories"><a href="http://searchdatabackup.techtarget.com/photostories">Photo Stories</a></li>
+                        <li id="nav-links-Podcasts"><a href="http://searchdatabackup.techtarget.com/podcasts">Podcasts</a></li>
+                        <li id="nav-links-Quizzes"><a href="http://searchdatabackup.techtarget.com/cloud-backup-and-recovery/quizzes">Quizzes</a></li>
+                        <li id="nav-links-Tutorials"><a href="http://searchdatabackup.techtarget.com/cloud-backup-and-recovery/tutorials">Tutorials</a></li>
+                        <li class="nav-links-sponsoredcommunities"><a href="http://searchdatabackup.techtarget.com/sponsored_communities">Sponsored Communities</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="nav-list">
+                <li class="nav-list-item nav-list-item-searchsites">
+                  <div class="nav-list-item-header searchdatabackup"><a href="http://searchdatabackup.techtarget.com"><span class="nav-list-item-header-title"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Backup</span></span></a></div>
+                </li>
+                <li class="nav-list-item nav-list-item-topics">
+                  <div class="nav-list-item-header"><span class="nav-list-item-header-type">Topic</span><span class="nav-list-item-header-title"><a href="">All Topics</a></span><i data-icon="5" class="icon icon-arrow-down"></i><i data-icon="A" class="icon icon-navigation-detail"></i></div>
+                  <div class="nav-list-item-dropdown">
+                    <div class="nav-list-item-jscroll">
+                      <ul class="nav-list-sublist">
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Data-backup-security"> Security</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Data-reduction-and-deduplication"> Data reduction</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Data-storage-backup-tools"> Backup tools</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Disk-based-backup"> Disk backup</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Remote-data-protection"> Remote backup</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Tape-backup-and-tape-libraries"> Tape backup</a></li>
+                        <li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com/resources/Topics-Archive"> Topics Archive</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav-social">
+                <li class="nav-social-item title">Follow:</li>
+                <li id="navBarGooglePlus" title="Follow searchDataBackup on Google+" class="nav-social-item"><a href="https://plus.google.com/u/0/106000202575757202315" target="_blank"><i data-icon="s" class="icon"></i></a></li>
+                <li id="navBarFacebook" title="Like searchDataBackup on Facebook" class="nav-social-item"><a href="https://www.facebook.com/Search-Storage/10150115721885374" target="_blank"><i data-icon="u" class="icon"></i></a></li>
+                <li id="navBarTwitter" title="Follow @databackuptt on Twitter" class="nav-social-item"><a href="https://twitter.com/databackuptt" target="_blank"><i data-icon="c" class="icon"></i></a></li>
+                <li id="navBarLinkedIn" title="Follow searchDataBackup on LinkedIn" class="nav-social-item"><a href="http://www.linkedin.com/company/3007485" target="_blank"><i data-icon="o" class="icon"></i></a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="ad-wrapper header-leaderboard ad-desktop">
+            <!-- AdsController, generated at 08:38:53 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+          </div>
+        </div>
+      </div>
+      <div id="micrositeWrapper">
+        <button class="subscribe_link" onclick="Pushwoosh.subscribe()">Subscribe</button>
+        <button class="unsubscribe_link" onclick="Pushwoosh.unsubscribe()">Unsubscribe</button>
+        <div id="headerOuterContainer">
+          <div id="headerInnerContainer">
+            <div id="sponsorBar">
+              <div id="sponsorBarContainer">
+                <div id="socialMenu"><i class="icon-share2"></i>
+                  <div class="micrositeSocialMenu">
+                    <div class="share-bar-container">
+                      <ul class="share-bar">
+                        <li title="Like/Share on Facebook" data-socialsite="facebook" class="share-bar-item share-bar-item-desktop socialMedia-facebook"><a href="#"><i data-icon="u" class="icon"></i></a></li>
+                        <li title="Share on Twitter" data-socialsite="twitter" class="share-bar-item share-bar-item-desktop socialMedia-twitter"><a href="#"><i data-icon="c" class="icon"></i></a></li>
+                        <li title="Share on LinkedIn" data-socialsite="linkedin" class="share-bar-item share-bar-item-desktop socialMedia-linkedin"><a href="#"><i data-icon="o" class="icon"></i></a></li>
+                        <li title="Email a Friend" class="share-bar-item share-bar-item-desktop contentTools-email"><a href="http://api.addthis.com/oexchange/0.8/forward/email/offer?pubid=uxtechtarget&amp;url=http%3A%2F%2Fpreview.techtarget.com%3A8080%2Fibmbizconnect%3Fvgnextrefresh%3D1%233744114142001&amp;title=Managing+the+%22Smart+Enterprise%22&amp;email_template=TechTargetSearchSites&amp;ct=1"><i data-icon="n" class="icon"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="sponsoredBy">
+                  <p class="sponsoredByText">Sponsored Content </p><i class="icon-info"></i>
+                  <div class="sponsorInfoPanel">
+                    <p>Sponsored content is a special advertising section provided by IT vendors. It features educational content and interactive media aligned to the topics of this web site.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="micrositeHeader"><a class="clientLogo"></a></div>
+            <div id="headerContainerClear"></div>
+          </div>
+        </div>
+        <nav>
+          <div id="tabDropDown"><a></a><i class="icon-play"></i></div>
+          <ul id="navList">
+            <li class="activeTab"><a>Cloud</a></li>
+            <li><a>Collaboration</a></li>
+            <li><a>Converged Infrastructure</a></li>
+            <li><a>Productivity And Collaboration</a></li>
+          </ul>
+        </nav>
+        <div id="wayFinder">
+          <div id="wayFinderContainer">
+            <h1>Curabitur venenatis mauris finibus nisi hendrerit, sed semper lacus.</h1>
+          </div>
+        </div>
+        <div id="heroPlayerContainer"><a id="heroImage">
+            <div id="heroOverlay">
+              <p class="overlayDuration"></p>
+              <h2 class="overlayTitle"></h2>
+              <p class="overlayCTA">Watch Now</p>
+            </div>
+            <div id="heroImageContainerOuter">
+              <div id="heroImageContainerInner"><img src="images/background-dark.jpg"></div>
+            </div></a>
+          <div id="videoPlayerContainer">
+            <video id="video-1" data-account="1660622130" data-video-id="" data-playlist-id="4234547961001" data-player="2483e45a-7074-4c6a-8470-0e4a53b3bef8" data-embed="default" controls="" class="video-js"></video>
+          </div>
+          <div id="heroPlaylistContainer">
+            <ol class="vjs-playlist"></ol>
+          </div>
+          <div id="heroPlaylistInfoContainer">
+            <p><span id="slider-prev"></span><span class="videoInfo"></span><span id="slider-next"></span></p>
+          </div>
+          <script src="//players.brightcove.net/1660622130/2483e45a-7074-4c6a-8470-0e4a53b3bef8_default/index.min.js"></script>
+        </div>
+        <div id="featuredAssetContainer">
+          <div id="featuredAssets" class="clearfix">
+            <div class="featuredAssetsTitleContainer">
+              <h2><span>Recently Added Content</span></h2>
+            </div>
+            <ul>
+              <li><a href="test.com">
+                  <div class="featuredAssetsHeading"><img src="images/assetImage5.png"></div>
+                  <div class="featuredAssetsContent">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+                    <p class="featuredAssetContent">Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc.</p>
+                    <div class="featuredAssetCTALeft">View Now <span class="featuredAssetCTARight"><i class="icon-arrow"></i></span></div>
+                  </div></a></li>
+              <li><a href="test.com">
+                  <div class="featuredAssetsHeading"><img src="images/assetImage6.png"></div>
+                  <div class="featuredAssetsContent">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                    <p class="featuredAssetContent">Vestibulum id nisi dapibus, mollis tellus vel, </p>
+                    <div class="featuredAssetCTALeft">View Now <span class="featuredAssetCTARight"><i class="icon-arrow"></i></span></div>
+                  </div></a></li>
+              <li><a href="test.com">
+                  <div class="featuredAssetsHeading"><img src="images/assetImage7.png"></div>
+                  <div class="featuredAssetsContent">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin djhksdhjsh dhsjdhsj</h3>
+                    <p class="featuredAssetContent">Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec </p>
+                    <div class="featuredAssetCTALeft">View Now <span class="featuredAssetCTARight"><i class="icon-arrow"></i></span></div>
+                  </div></a></li>
+            </ul>
+          </div>
+          <div id="assetsListing">
+            <div class="assetsListingTitleContainer">
+              <h2><span>Browse Our Library</span></h2>
+            </div>
+            <ul id="assetsList">
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi cursus vestibulum</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi cursus</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus. Sed.</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+              <li><a href="google.com">
+                  <div class="assetsListingHeading">
+                    <h3>Quisque sit amet ultricies sapien. Morbi</h3>
+                  </div>
+                  <div class="assetsListingContent">
+                    <p>Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. </p>
+                    <p class="assetCTA">Continue Reading</p>
+                  </div></a></li>
+            </ul>
+            <div id="assetListingFader"></div>
+            <div class="assetListingExpand">
+              <p>Load More <i class="icon-play"></i></p>
+            </div>
+          </div>
+        </div>
+        <div id="widgetsOuterContainer">
+          <script>
+            // Not editable
+            var socialFeed = true;
+            
+            // Editable: 2 options only (true or false)
+            var socialFeedHasTwitter = true;
+            var socialFeedHasFacebook = true;
+            var socialFeedHasRSS = true;
+            
+            // Editable: Update to Twitter handle (e.g. 'TechTarget')
+            var socialFeedTwitterAccount = 'trilliumbrewing';
+            
+            // Editable: Only update if you want footer text to differ from the handle
+            // (e.g. var socialFeedTwitterAccountName = 'Tech Target CW';)
+            var socialFeedTwitterAccountName = socialFeedTwitterAccount;
+            
+            // Editable: Find Facebook account number/name. Some pages will have a number associated with it.
+            var socialFeedFacebookAccount = '231963570219936';
+            
+            // Editable: Only update if you want footer text to differ from the handle
+            // (e.g. var socialFeedFacebookAccountName = 'TechTarget';)
+            // The footer will say Like us at TechTarget instead of Like us at 231963570219936
+            var socialFeedFacebookAccountName = socialFeedFacebookAccount;
+            
+            // Editable: Provide 2 URLs. The account URL is the link to the XML feed itself. The Link URL is a webpage where the footer CTA will link to.
+            var socialFeedRSSAccount = 'http://www.bitpipe.com/data/bpXchange?b=ka_bp_datamining&d=31&f=rss&u=rss';
+            var socialFeedRSSLinkURL = 'http://www.bitpipe.com/';
+            
+            // Editable: 3 options ('Twitter', 'Facebook', 'RSS')
+            // Whatever is selected will be the default tab
+            var startActive = 'Twitter';
+            
+          </script>
+          <div id="widgetsInnerContainer">
+            <div id="micrositeSocialFeeds" class="clearfix">
+              <div class="micrositeSocialFeedNav">
+                <ul></ul>
+              </div>
+              <div class="micrositeSocialFeedContent">
+                <div class="spinningBoxes">
+                  <div class="cube1"></div>
+                  <div class="cube2"></div>
+                </div>
+                <ul></ul>
+              </div>
+              <div class="micrositeSocialFeedFooter">
+                <div class="micrositeSocialFeedFooterCTA"></div>
+              </div>
+            </div>
+            <div id="adContainer"><img src="images/adLight.jpg"></div>
+          </div>
+        </div>
+        <script>
+          console.log('initize!');
+          siteName = "lol";
+          TT(['context'], function (ctx) {
+           siteName = ctx.siteName;
+          });
+          
+          var Pushwoosh = Pushwoosh || [];
+          
+          Pushwoosh.push(['init', {
+            logLevel: 'info', // possible values: error, info, debug
+            applicationCode: '1177C-5B324', // you application code from Pushwoosh Control Panel
+            // safariWebsitePushID: 'web.com.example.domain', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+            defaultNotificationTitle: 'Pushwoosh Test', // sets a default title for push notifications
+            defaultNotificationImage: 'https://media-qa.techtarget.com/rms/ux/responsive/img/footer_logo.png', // URL to custom custom notification image
+            autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+            serviceWorkerUrl: 'pushwoosh-service-worker.js',
+            userId: 'user_id', // optional, set custom user ID
+            tags: {
+              'Name': 'Dave Test'   	// optional, set custom Tags
+            }
+          }]);
+          Pushwoosh.push(['onReady', function(api) {
+           console.log('Pushwoosh ready');
+          }]);
+          Pushwoosh.push(function(api) {
+          
+           //- var myCustomTags = {
+           //- 	'siteSubscribeFrom': siteName
+           //- };
+           //- // Set tags for a user
+           //- api.setTags(myCustomTags);
+           
+           var myCustomTags = {
+            'Tag 1': 123,
+            'Tag 2': 'some string'
+           };
+           api.setTags(myCustomTags)
+            .then(function(res) {
+             var skipped = res && res.skipped || [];
+             if (!skipped.length) {
+              console.log('success');
+             }
+             else {
+              console.warn('skipped tags:', skipped);
+             }
+            })
+            .catch(function(err) {
+             console.error('setTags error:', err);
+            });
+            
+           // Get tags for a user from server
+           api.getTags();
+           
+           // Register user ID
+           api.registerUser('myUserID');
+           
+           // Post an Event
+           api.postEvent('myEventName', {attributeName: 'attributeValue'});
+           
+           Pushwoosh.getUserId().then(function(userId) {
+            console.log('userId:', userId);
+           });
+           Pushwoosh.isSubscribed().then(function(isSubscribed) {
+            console.log('isSubscribed', isSubscribed);
+            //- $('.subscribe_link').text('lawl');
+           });
+           //- <button onclick="Pushwoosh.subscribe()">Subscribe</button>
+           Pushwoosh.push(['onSubscribe', function(api) {
+            console.log('User successfully subscribed');
+           }]);
+          });
+        </script>
+      </div>
+    </div>
+    <div>
+      <div>
+        <!-- NetworkCoverageController, generated at 08:17:52 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+        <section id="network-coverage" class="latest-wrapper">
+          <nav class="latest-nav-wrapper">
+            <h2>Latest TechTarget<span class="latest-title">resources</span></h2>
+            <ul class="latest-nav">
+              <li><a href="#" data-item="1" class="latest-nav-item selected">Server Virtualization<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="2" class="latest-nav-item">VMWare<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="3" class="latest-nav-item">Virtual Desktop<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="4" class="latest-nav-item">AWS<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="5" class="latest-nav-item">Data Center<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="6" class="latest-nav-item">Windows Server<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="7" class="latest-nav-item">SOA<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+              <li><a href="#" data-item="8" class="latest-nav-item">CRM<i data-icon="5" class="icon mobile-icon"></i><i data-icon="A" class="icon desktop-icon"></i></a></li>
+            </ul>
+          </nav><span class="latest-nav-mask before-mask"></span><span class="latest-nav-mask after-mask"></span>
+          <div class="latest-body">
+            <div data-item="1" class="latest-content">
+              <h2 class="searchservervirtualization"><a href="http://searchservervirtualization.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Server</span><span class="logo-2">Virtualization</span></a></h2>
+              <ul>
+                <li><i data-icon="7" class="icon"></i>
+                  <h3><a href="http://searchservervirtualization.techtarget.com/ehandbook/Building-interest-in-the-software-defined-data-center-architecture">Building interest in the software-defined data center architecture</a></h3>
+                  <p>Software is now able to handle an increasing number of data center infrastructure management tasks, including storage and ...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchservervirtualization.techtarget.com/tip/Elevate-your-hardware-design-with-the-Open-Compute-Project">Elevate your hardware design with the Open Compute Project</a></h3>
+                  <p>The Open Compute Project is an invaluable design resource engineered by some of IT's leading cloud providers and can be an ...</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchservervirtualization.techtarget.com/news/450297763/Users-give-thumbs-up-to-lower-end-versions-of-VMwares-NSX">Users give thumbs-up to lower-end versions of VMware's NSX</a></h3>
+                  <p>VMware looks to finally establish a foothold in corporate accounts with two low-end versions of NSX. But will the enterprise take...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="2" class="latest-content">
+              <h2 class="searchvmware"><a href="http://searchvmware.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">VMware</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvmware.techtarget.com/tip/Save-money-and-resources-with-a-VM-sprawl-management-plan">Save money and resources with a VM sprawl management plan</a></h3>
+                  <p>Don't let VM sprawl and resource waste drain your bank account. The key to sprawl prevention and elimination is early detection.</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvmware.techtarget.com/tip/VMware-focuses-on-the-future-with-vSphere-HTML5-Web-Client">VMware focuses on the future with vSphere HTML5 Web Client</a></h3>
+                  <p>VMware's decision to move to HTML5 and no longer rely on Adobe Flash means the end of the C# client.</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvmware.techtarget.com/tip/Peak-VMware-leads-to-decrease-in-demand-for-VMware-skills">"Peak VMware" leads to decrease in demand for VMware skills</a></h3>
+                  <p>The decline in vSphere revenue has many VMware specialists re-evaluating their future and turning their attention to ...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="3" class="latest-content">
+              <h2 class="searchvirtualdesktop"><a href="http://searchvirtualdesktop.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Desktop</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvirtualdesktop.techtarget.com/feature/Five-Citrix-news-items-you-might-have-missed-at-Synergy-2016">Five Citrix news items you might have missed at Synergy 2016</a></h3>
+                  <p>Citrix's relationship with Microsoft grew closer at Synergy 2016 -- which is no surprise given that CEO Kirill Tatarinov used to ...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvirtualdesktop.techtarget.com/opinion/Raspberry-Pi-thin-client-devices-are-finally-viable-for-the-enterprise">Raspberry Pi thin client devices are finally viable for the enterprise</a></h3>
+                  <p>Citrix partnered with Raspberry Pi to create minimal-cost thin clients optimized for the HDX remote display protocol, providing a...</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchvirtualdesktop.techtarget.com/quiz/Seven-questions-to-test-your-Microsoft-Azure-RemoteApp-knowledge">Seven questions to test your Microsoft Azure RemoteApp knowledge</a></h3>
+                  <p>Think you know everything about Microsoft Azure RemoteApp? Prove it by taking this quiz on how Azure RemoteApp uses the cloud to ...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="4" class="latest-content">
+              <h2 class="searchaws"><a href="http://searchaws.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">AWS</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchaws.techtarget.com/news/450297593/DevOps-on-AWS-isnt-always-an-easy-transition">DevOps on AWS isn't always an easy transition</a></h3>
+                  <p>DevOps on AWS can make plenty of sense, but users must embrace the ops side of the equation, know when to use native tools and ...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchaws.techtarget.com/news/450297450/Amazon-API-management-DevOps-tools-still-miss-mark-for-enterprises">Amazon API management, DevOps tools still miss mark for enterprises</a></h3>
+                  <p>Cloud customers seek better connectivity between services and components. One cloud consultant discusses how businesses approach ...</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchaws.techtarget.com/tip/How-do-we-license-Windows-Server-on-AWS">How do we license Windows Server on AWS?</a></h3>
+                  <p>Our enterprise has been wary of licensing issues, but we'd like to move Microsoft-based workloads to AWS. How can we migrate ...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="5" class="latest-content">
+              <h2 class="searchdatacenter"><a href="http://searchdatacenter.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchdatacenter.techtarget.com/tip/A-disaster-recovery-report-uncovers-the-errors-that-led-to-chaos">A disaster recovery report uncovers the errors that led to chaos</a></h3>
+                  <p>In this disaster recovery report, discover the failure points that led to catastrophe and learn how to make decisions that will ...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchdatacenter.techtarget.com/tip/What-happens-when-disaster-recovery-policies-go-up-in-smoke">What happens when disaster recovery policies go up in smoke</a></h3>
+                  <p>Starting with an alarm and ending in disaster, one data center fire nearly wiped out an entire operation. Ultimately, poor design...</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchdatacenter.techtarget.com/feature/Five-IT-troubleshooting-tips-to-beat-storage-network-bottlenecks">Five IT troubleshooting tips to beat storage, network bottlenecks</a></h3>
+                  <p>When something goes wrong in the data center, there are many possible culprits, ranging from the network to storage. Here are ...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="6" class="latest-content">
+              <h2 class="searchwindowsserver"><a href="http://searchwindowsserver.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Windows</span><span class="logo-2">Server</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchwindowsserver.techtarget.com/quiz/How-well-do-you-know-these-Hyper-V-Server-2016-security-features">How well do you know these Hyper-V Server 2016 security features?</a></h3>
+                  <p>Microsoft ramped up Hyper-V security in Windows Server 2016 with new features such as shielded VMs and guarded hosts. Here's what...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchwindowsserver.techtarget.com/tip/What-to-configure-in-Windows-Server-local-security-policy">What to configure in Windows Server local security policy</a></h3>
+                  <p>Organizations should configure the local security policy for new servers to handle patch management and for protection against ...</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchwindowsserver.techtarget.com/tip/Best-practices-for-authenticating-PowerShell-script-permissions">Best practices for authenticating PowerShell script permissions</a></h3>
+                  <p>PowerShell scripts can only run when they have the proper permissions, but an administrator may need to authenticate the script ...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="7" class="latest-content">
+              <h2 class="searchsoa"><a href="http://searchsoa.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SOA</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchsoa.techtarget.com/tip/How-to-choose-middleware-for-your-mobile-first-strategy">How to choose middleware for your mobile-first strategy</a></h3>
+                  <p>A key part of going mobile-first is selecting the middleware that aligns with your end goals. In this tip, Tom Nolle examines the...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchsoa.techtarget.com/tip/Creating-successful-RESTful-API-design">Creating successful RESTful API design</a></h3>
+                  <p>Successful API design requires lots of attention to detail. Take these three steps for creating RESTful API design.</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchsoa.techtarget.com/quiz/Putting-your-enterprise-mobile-development-approach-to-the-test">Putting your enterprise mobile development approach to the test</a></h3>
+                  <p>The pressure is on to create mobile apps, but how do you ensure your development efforts are worthwhile? Take this quiz on proper...</p>
+                </li>
+              </ul>
+            </div>
+            <div data-item="8" class="latest-content">
+              <h2 class="searchcrm"><a href="http://searchcrm.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">CRM</span></a></h2>
+              <ul>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchcrm.techtarget.com/feature/Conversica-cloud-AI-software-tackles-sales-leads">Conversica cloud AI software tackles sales leads</a></h3>
+                  <p>The artificial intelligence assistant from Conversica helps sales representatives initiate leads, follow up with potential ...</p>
+                </li>
+                <li><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchcrm.techtarget.com/news/450297328/Predictive-intelligence-software-helps-align-marketing-sales-teams">Predictive intelligence software helps align marketing, sales teams</a></h3>
+                  <p>By compiling digital footprint and using predictive intelligence, software company 6Sense looks ahead, not back.</p>
+                </li>
+                <li class="hide-for-small"><i data-icon="2" class="icon"></i>
+                  <h3><a href="http://searchcrm.techtarget.com/tip/Consumers-still-waiting-for-Godot-on-personalized-marketing">Consumers still waiting for Godot on personalized marketing?</a></h3>
+                  <p>Personalized messaging can be an invaluable tool for marketers. Unfortunately, these marketing campaigns aren't living up to ...</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <!-- FooterLinksController, generated at 08:17:52 Wed Jun 8, 2016, by vappma20.techtarget.com-->
+        <footer id="page-footer">
+          <div class="content-left">
+            <!-- Plug in TechTarget Logo inside the anchor tag here.-->
+            <div class="column column-logo"><a href="#"></a></div>
+          </div>
+          <div class="content-center">
+            <ul class="column">
+              <li class="footer-item footer-item-col-1 footer-item-row-1"><a href="http://searchcloudcomputing.techtarget.com/about">About Us</a></li>
+              <li class="footer-item footer-item-col-1 footer-item-row-2"><a href="http://searchcloudcomputing.techtarget.com/about/contact">Contact Us</a></li>
+              <li class="footer-item footer-item-col-1 footer-item-row-3"><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy Policy</a></li>
+              <li class="footer-item footer-item-col-1 footer-item-row-4"><a href="http://searchcloudcomputing.techtarget.com/videos">Videos</a></li>
+              <li class="footer-item footer-item-col-1 footer-item-row-5"><a href="http://searchcloudcomputing.techtarget.com/photostories">Photo Stories</a></li>
+              <li class="footer-item footer-item-col-1 footer-item-row-6"><a href="http://searchcloudcomputing.techtarget.com/guides">Guides</a></li>
+            </ul>
+            <ul class="column">
+              <li class="footer-item footer-item-col-2 footer-item-row-1"><a href="http://searchcloudcomputing.techtarget.com/about/advertising">Advertisers</a></li>
+              <li class="footer-item footer-item-col-2 footer-item-row-2"><a href="http://searchcloudcomputing.techtarget.com/about/partners">Business Partners</a></li>
+              <li class="footer-item footer-item-col-2 footer-item-row-3"><a href="http://www.techtarget.com/mediakit">Media Kit</a></li>
+              <li class="footer-item footer-item-col-2 footer-item-row-4"><a href="http://www.techtarget.com">Corporate Site</a></li>
+              <li class="footer-item footer-item-col-2 footer-item-row-5"><a href="http://searchcloudcomputing.techtarget.com/experts">Experts</a></li>
+            </ul>
+            <ul class="column column-mobile-hidden">
+              <li class="footer-item footer-item-col-3 footer-item-row-1"><a href="http://reprints.ygsgroup.com/m/techtarget">Reprints</a></li>
+              <li class="footer-item footer-item-col-3 footer-item-row-2"><a href="http://searchcloudcomputing.techtarget.com/archive">Archive</a></li>
+              <li class="footer-item footer-item-col-3 footer-item-row-3"><a href="http://searchcloudcomputing.techtarget.com/sitemap">Site Map</a></li>
+              <li class="footer-item footer-item-col-3 footer-item-row-4"><a href="http://searchcloudcomputing.techtarget.com/events">Events</a></li>
+              <li class="footer-item footer-item-col-3 footer-item-row-5"><a href="http://searchcloudcomputing.techtarget.com/eproducts">E-Products</a></li>
+            </ul>
+          </div>
+          <div class="content-right">
+            <div class="column column-legal">
+              <p class="footer-legal">All Rights Reserved,<span><a href="http://searchcloudcomputing.techtarget.com/about/copyright">Copyright 2010 - 2016</a>, TechTarget</span></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive-ui.min.js?v=6.49"></script>
+    <!-- Begin Chartbeat-->
+    <script>
+      var _sf_async_config={};
+      _sf_async_config.uid = 41935;
+      _sf_async_config.domain = 'techtargetnetwork.com';
+      _sf_async_config.sections = ',  - NO TOPIC';
+      _sf_async_config.authors = 'NO AUTHOR, MICROSITE_LP,  - MICROSITE_LP';
+      _sf_async_config.useCanonical = true;
+      (function(){
+      function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+      (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+      document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+      })();
+    </script>
+    <!-- End Chartbeat-->
+    <!-- Begin DataPoint Media-->
+    <script>
+      (function() {
+      var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+      s.type='text/javascript';
+      s.async=true;
+      s.src=sc+'s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js';
+      h.appendChild(s);
+      })();
+    </script>
+    <!-- End DataPoint Media-->
+    <!-- Begin CrazyEgg-->
+    <script>
+      setTimeout(function(){
+      var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7034.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;
+      a.type="text/javascript";
+      b.parentNode.insertBefore(a,b)
+      }, 1);
+    </script>
+    <!-- End CrazyEgg-->
+    <!-- Begin GoogleRemarketing-->
+    <script>
+      var google_conversion_id = 1070110249;
+      var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+    </script>
+    <script src="http://www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&amp;label=RRsgCOW4tgMQqayi_gM&amp;guid=ON&amp;script=0"></div>
+    </noscript>
+    <script>
+      var google_conversion_id = 1072226410;
+      var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+    </script>
+    <script src="http://www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&amp;label=x3P_CIql1gMQ6sCj_wM&amp;guid=ON&amp;script=0"></div>
+    </noscript>
+    <!-- End GoogleRemarketing-->
+    <div id="mobile-sidebars" class="mobile-sidebars"></div>
+    <div id="image-overlay" class="image-overlay">
+      <div class="image-overlay-img"></div>
+      <div class="image-overlay-close">Close</div>
+    </div>
+    <!--
+    Component Load Times
+    ====================
+    DefaultPageController=20 ms
+    PinnedNavBarController=48 ms
+    AdsController=0 ms
+    MicrositeNavController=60 ms
+    Total time=128 ms
+    Request Serving Server: vappma20.techtarget.com
+    -->
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":302,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD00d","agent":"","errorBeacon":"bam.nr-data.net"}</script>
+  </body>
 </html>
